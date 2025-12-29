@@ -5,16 +5,16 @@ title: 'feat: '
 labels: enhancement
 ---
 
-### Goal
+### Goal (Aim)
 <Describe the user need or problem, e.g., "Implement a list of added items so users can review their progress before saving">
 
-### Proposed Changes
+### Proposed Changes (Backlog)
 - [ ] <Component Task: e.g., "Create 'ItemCard' component to display discoveryTerm and definition">
 - [ ] <Implementation Task: e.g., "Add 'handleRemoveItem' to LoadItem factory logic">
 - [ ] <State Task: e.g., "Map component inputs to the 'itemsFormData' DTO">
 - [ ] <add specific technical task>
 
-### Acceptance Criteria
+### Acceptance Criteria (Criteria)
 - [ ] <Functional Check: e.g., "ItemCard displays correctly in the BottomSheet ScrollView">
 - [ ] <Data Check: e.g., "Deleting an ItemCard removes the corresponding DTO from state">
 - [ ] Logic flow is verified via relevant automated tests (Wall of Providers)
