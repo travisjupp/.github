@@ -6,39 +6,43 @@ labels: epic, enhancement
 ---
 
 ## Goal
-[Describe the high-fidelity orchestration this Epic aims to achieve. Focus on
-the user's journey from transient interaction to final data persistence and
-reconciliation.]
+[State the primary objective: e.g., "Implement a high-fidelity system for [user action] that ensures [data integrity/outcome] through a multi-step [lifecycle/process]."]
 
 ## Technical Context
-[Identify the infrastructure and data-pipes involved. Mention specific Redux
-slices, the Wall of Providers, or hardware-bridged components like BottomSheet.
-Reference relevant architectural documentation.]
+[Identify the core modules: e.g., "Utilizes [Module A] for data-pipes and [Module B] for environmental orchestration. Reference [Schema/Doc] for persistence specifications."]
 
 ## Implementation Track
 
-### Phase 1: [Scaffolding & Initial Interaction]
-- [ ] [Primary task for UI/Infrastructure foundation] (#[IssueNumber])
-- [ ] [Action-dispatch or state-initialization task] (#[IssueNumber])
-- [ ] [Refinement of design tokens or localized styling] (#[IssueNumber])
+### Phase 1: [Scaffolding & Foundation]
+- [ ] [Primary infrastructure task: e.g., "Provision the directory structure and base interfaces"] (#[IssueNumber])
+- [ ] [State initialization: e.g., "Scaffold the initial state slice and dispatchers"] (#[IssueNumber])
+- [ ] [Visual presentation: e.g., "Standardize design tokens and presentation components"] (#[IssueNumber])
 
-### Phase 2: [The Logic/Factory Engine]
-- [ ] [Implementation of the primary container and lifecycle] (#[IssueNumber])
-- [ ] [Architectural task for factory or sub-component logic] (#[IssueNumber])
-- [ ] [Development of DTO factory logic for iterative expansion] (#[IssueNumber])
-- [ ] **Verification**: [Describe the integration test suite required to ensure determinism] (#[IssueNumber])
-- [ ] **Refactor**: [Describe any necessary architectural pivots or logic hardening] (#[IssueNumber])
+### Phase 2: [Core Logic & Engine]
+- [ ] [Lifecycle management: e.g., "Implement the primary container and lifecycle hooks"] (#[IssueNumber])
+- [ ] [Business logic: e.g., "Architect the core factory logic or calculation engine"] (#[IssueNumber])
+- [ ] [Data-transfer: e.g., "Engineer the DTO factory for iterative state expansion"] (#[IssueNumber])
+- [ ] **Verification**: [Test suite description: e.g., "Execute integration tests to ensure logic determinism"] (#[IssueNumber])
+- [ ] **Refactor**: [Hardening task: e.g., "Refactor the data-pipe to resolve environmental fragility"] (#[IssueNumber])
 
-### Phase 3: [Review & Reconciliation]
-- [ ] **Architecture**: [Describe schema synchronization or data-pipe alignment] (#[IssueNumber])
-- [ ] [Implementation of the review/audit interface] (#[IssueNumber])
-- [ ] [Integration of reconciliation flow into the primary feature container] (#[IssueNumber])
-- [ ] [Development of filter logic for final DTO reconciliation] (#[IssueNumber])
-- [ ] [Implementation of final data persistence and transient store reset] (#[IssueNumber])
+### Phase 3: [Review & Finalization]
+- [ ] **Architecture**: [Alignment task: e.g., "Synchronize the transient schema with the persistent database"] (#[IssueNumber])
+- [ ] [Audit interface: e.g., "Implement the user-facing review and reconciliation screen"] (#[IssueNumber])
+- [ ] [Reconciliation logic: e.g., "Develop filter logic for final data reconciliation"] (#[IssueNumber])
+- [ ] [Finalization: e.g., "Implement final data persistence and transient state reset"] (#[IssueNumber])
+
+> **Note on Phase Structure**:
+> To maintain a **modular** and **logical** track, structure phases by the flow of **Persistence**:
+> - **Phase 1 (The Foundation)**: Focus on **Scaffolding**, **Interfaces**, and **Mocks**. This is the "Setup."
+> - **Phase 2 (The Engine)**: Focus on **Processing**, **State Sync**, and **Verification**. This is the "Action."
+> - **Phase 3 (The Persistence)**: Focus on **Reconciliation**, **Cleanup**, and **Final Audit**. This is the "Result."
 
 ## Acceptance Criteria
-- [ ] [Criteria 1: Successful navigation through the feature lifecycle]
-- [ ] [Criteria 2: Verification of data reconciliation and collision prevention]
-- [ ] [Criteria 3: User ability to audit and mutate transient data before persistence]
-- [ ] [Criteria 4: Confirmation of final state persistence and transient store cleanup]
+- [ ] [Lifecycle: e.g., "User successfully navigates from initial entry to final review."]
+- [ ] [Integrity: e.g., "Verification of data reconciliation and prevention of state collisions."]
+- [ ] [Audit: e.g., "User can audit and mutate transient data before final confirmation."]
+- [ ] [Persistence: e.g., "Final confirmation clears transient stores and persists data to the main database."]
+- [ ] Logic flow is verified via relevant automated tests
+- [ ] State transitions are verified via terminal logging or debugger
+- [ ] Build/Bundler successfully executes in target environment
 

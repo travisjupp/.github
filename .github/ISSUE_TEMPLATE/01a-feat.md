@@ -17,7 +17,7 @@ labels: enhancement
 ## Acceptance Criteria
 - [ ] [Functional Check: e.g., "ItemCard displays correctly in the BottomSheet ScrollView"]
 - [ ] [Data Check: e.g., "Deleting an ItemCard removes the corresponding DTO from state"]
-- [ ] Logic flow is verified via relevant automated tests (Wall of Providers)
+- [ ] Logic flow is verified via relevant automated tests
 - [ ] State transitions are verified via terminal logging or debugger
 - [ ] Build/Bundler successfully executes in target environment
 
