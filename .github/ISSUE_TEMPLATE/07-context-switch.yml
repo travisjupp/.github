@@ -1,6 +1,6 @@
 name: "🚧 Context Switch: Breadcrumb"
 description: Save state before project-hopping (Tuesday/Friday Protocol).
-title: "context: [WIP] Issue # - "
+title: "[WIP]: "
 labels: ["context-switch", "wip"]
 body:
   - type: dropdown
