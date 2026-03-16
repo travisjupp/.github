@@ -1,0 +1,47 @@
+name: "🚧 Context Switch: Breadcrumb"
+description: Save state before project-hopping (Tuesday/Friday Protocol).
+title: "context: [WIP] Issue # - "
+labels: ["context-switch", "wip"]
+body:
+  - type: dropdown
+    id: status
+    attributes:
+      label: "🧪 Current Build & Test Health"
+      options:
+        - "🟢 STABLE: Compiles & Tests Pass"
+        - "🟡 PARTIAL: Compiles, but some tests/flows failing"
+        - "🔴 BROKEN: Does not compile / Critical failure"
+    validations:
+      required: true
+
+  - type: textarea
+    id: where_left_off
+    attributes:
+      label: "📍 Where I Left Off"
+      description: "Which branch, files, and specific task are active?"
+      placeholder: |
+        - Active Branch: feat/issue-XX-description
+        - Current File(s): src/components/...
+        - Current Task: Implementing the handleConfirm thunk logic.
+    validations:
+      required: true
+
+  - type: textarea
+    id: next_steps
+    attributes:
+      label: "🚀 The Next 3 Steps"
+      description: "Instructions for your future self on project resumption."
+      placeholder: |
+        1. Fix the pulse animation jitter.
+        2. Bridge the isReady state to the thunk.
+        3. Verify Firestore write permissions.
+    validations:
+      required: true
+
+  - type: textarea
+    id: cognitive_residue
+    attributes:
+      label: "🧠 Cognitive Residue"
+      description: "Shower thoughts, logic traps, or 'don't forget' notes."
+      placeholder: "Don't forget the Firebase security rules for the new Material schema..."
+
